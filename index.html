@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -28,6 +28,14 @@
                     colors: {
                         'cs-primary': '#1DD100',
                         'cs-primary-10': '#1DD1001A',
+                        'cs-primary-40': '#1DD10066',
+                        'cs-black': '#030712',
+                        'cs-black-10': '#0307121A',
+                        'cs-black-40': '#03071266',
+                        'cs-black-50': '#03071280',
+                        'cs-black-60': '#03071299',
+                        'cs-black-70': '#030712B3',
+                        'cs-black-80': '#030712CC',
                     }
                 }
             }
@@ -47,16 +55,107 @@
 </head>
 
 <body>
-    <header>
+    <!-- Navigation Bar -->
+    <header class="container mx-auto font-raleway">
+        <!-- Dropdown & Title -->
+        <div class="navbar px-4 lg:px-20">
+            <div class="navbar-start">
+                <div class="dropdown flex">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm text-sm font-medium dropdown-content mt-3 z-[1] p-2 shadow bg-cs-primary-10 rounded-box w-52 text-cs-black-70">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                    <a class="text-cs-black font-extrabold text-2xl lg:text-4xl gap-0 mx-0">P-Ticket</a>
+                </div>
 
+            </div>
+            <!-- Menu Bar for Larger Devices -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal text-sm lg:text-lg font-medium text-cs-black-70">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <!-- Right Side: Button -->
+            <div class="navbar-end">
+                <button
+                    class="btn bg-cs-primary-10 text-cs-primary text-xl lg:font-bold border border-solid border-cs-primary-40">Bus
+                    <span><img src="./images/bus-icon.png" alt=""></span></button>
+            </div>
+        </div>
     </header>
 
     <main>
-
+        <!-- Banner -->
+        <section class="container mx-auto px-4 lg:px-20 font-inter">
+            <div class="hero bg-[url('./images/banner.png')] bg-cover bg-no-repeat w-full h-[40vh] lg:h-[80vh] rounded-lg lg:rounded-2xl">
+                <div class="w-5/6 text-center text-neutral-content">
+                    <h1 class="mb-5 text-2xl lg:text-6xl font-extrabold font-raleway">End-to-End Travel with <br> <span class="text-cs-primary">P Paribahan</span></h1>
+                    <p class="mb-5 text-sm lg:text-2xl font-normal">Embark on eco-friendly adventures with Green Line - your end-to-end solution for sustainable travel experiences.</p>
+                    <button class="btn btn-primary bg-cs-primary border-none text-base lg:text-xl font-bold font-raleway text-cs-black">Buy Tickets</button>
+                </div>
+            </div>
+        </section>
     </main>
-
+        <!-- Offers -->
+        <section class="container mx-auto px-4 lg:px-20 mt-12 lg:mt-32 font-raleway">
+            <div class="coupon-container flex flex-col lg:flex-row gap-6">
+                <!-- Yellow Ticket -->
+                <div class="bg-amber-400 h-56 w-full lg:w-1/2 rounded-2xl flex relative">
+                    <!-- Left -->
+                    <div class="font-inter w-3/5 px-8 py-16 lg:p-14 text-left">
+                        <h3 class="text-xl lg:text-4xl font-extrabold text-cs-black-80">15% OFF</h3>
+                        <h3 class="my-1 lg:my-2 text-base lg:text-xl font-semibold text-cs-black-80">on your next purchase</h3>
+                        <h3 class="text-sm lg:text-lg font-medium text-cs-black-50">use by January 2024</h3>
+                    </div>
+                    <!-- divider -->
+                    <!-- <div class="border border-dashed border-b-2 my-5">
+                        <div class="absolute rounded-full w-8 h-8 bg-white -mt-10 left-[55%] lg:left-[57%]"></div>
+                        <div class="absolute rounded-full w-8 h-8 bg-white mt-48 left-[55%] lg:left-[57%]"></div>
+                    </div> -->
+                    <div>
+                        <img src="./images/cupon-devider.png" alt="" class="h-56">
+                    </div>
+                    <!-- Right -->
+                    <div class="font-raleway w-2/5 py-20 text-center">
+                        <h3 class="text-lg lg:text-3xl font-bold text-cs-black">NEW15</h3>
+                        <h3 class="my-2 text-base lg:text-xl font-medium text-cs-black-40">Coupon Code</h3>
+                    </div>
+                </div>
+                <!-- Pink Ticket -->
+                <div class="bg-rose-400 h-56 w-full lg:w-1/2 rounded-2xl flex relative">
+                    <!-- Left -->
+                    <div class="font-inter w-3/5 px-8 py-16 lg:p-14 text-left">
+                        <h3 class="text-xl lg:text-4xl font-extrabold text-cs-black-80">20% OFF</h3>
+                        <h3 class="my-1 lg:my-2 text-base lg:text-xl font-semibold text-cs-black-80">on your next purchase</h3>
+                        <h3 class="text-sm lg:text-lg font-medium text-cs-black-50">use by January 2024</h3>
+                    </div>
+                    <!-- divider -->
+                    <div>
+                        <img src="./images/cupon-devider.png" alt="" class="h-56">
+                    </div>
+                    <!-- Right -->
+                    <div class="font-raleway w-2/5 py-20 text-center">
+                        <h3 class="text-lg lg:text-3xl font-bold text-cs-black">Couple 20</h3>
+                        <h3 class="my-2 text-base lg:text-xl font-medium text-cs-black-40">Coupon Code</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
     <footer>
-        
+
     </footer>
 </body>
 
