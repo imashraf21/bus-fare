@@ -64,7 +64,6 @@ function handleClick(button) {
         button.classList.add('text-white');
 
         button.disabled = true;
-        console.log(seatList);
 
         // Set Seat Count
         document.getElementById("seatsBooked").innerHTML = seatList.length;
@@ -89,5 +88,26 @@ function handleClick(button) {
     }
     else {
         alert("You can only buy up to four tickets per purchase.")
+    }
+}
+
+function handleCoupon() {
+    const coupon = document.getElementById("couponCode").value;
+
+    if (coupon === 'NEW15' || coupon === 'Couple 20') {
+        document.getElementById("couponContainer").classList.add("hidden");
+
+        const discount = document.getElementById("discount");
+        discount.classList.remove("hidden");
+        discount.classList.add("flex");
+
+        const totalCost = document.getElementById("totalCost").innerHTML;
+        const totalDiscount = totalCost * (coupon === "NEW15" ? 0.15 : 0.20);
+        document.getElementById("discountedPrice").innerHTML = totalDiscount;
+
+        document.getElementById("grandCost").innerHTML = totalCost - totalDiscount;
+    }
+    else {
+        alert("Invalid Coupon Code");
     }
 }

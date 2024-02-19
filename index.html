@@ -456,18 +456,18 @@
                                         <p>BDT <span id="totalCost">0</span></p>
                                     </div>
                                     <!-- Discounted -->
-                                    <div class="justify-between font-medium hidden">
+                                    <div id="discount" class="justify-between font-medium hidden">
                                         <p>Discount Price</p>
-                                        <p>BDT <span>0</span></p>
+                                        <p>BDT <span id="discountedPrice">0</span></p>
                                     </div>
                                     <!-- Coupon -->
-                                    <div class="pt-2">
+                                    <div id="couponContainer" class="pt-2">
                                         <label id="coupon" class="input border-none flex justify-between h-14">
                                             <input class="bg-white" type="text" placeholder="Have Any Coupon?"
                                                 id="couponCode" disabled />
                                             <button
                                                 class="btn bg-cs-primary text-white font-semibold rounded-md px-6 my-auto"
-                                                id="couponEnable" disabled>Apply</button>
+                                                id="couponEnable" disabled onclick="handleCoupon()">Apply</button>
                                         </label>
                                     </div>
                                     <!-- Grand Total -->
