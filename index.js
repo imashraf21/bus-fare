@@ -111,3 +111,8 @@ function handleCoupon() {
         alert("Invalid Coupon Code");
     }
 }
+
+// Modal
+function handleModal() {
+    window.open('index.html', '_self');
+}
