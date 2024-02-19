@@ -447,7 +447,7 @@
                                         <p>Price</p>
                                     </div>
                                     <!-- Handled by JS -->
-                                    <div id="booingList" class="">
+                                    <div id="bookingList" class="font-normal text-cs-black-60">
 
                                     </div>
                                     <!-- Total Cost -->
@@ -464,15 +464,15 @@
                                     <div class="pt-2">
                                         <label id="coupon" class="input border-none flex justify-between h-14">
                                             <input class="bg-white" type="text" placeholder="Have Any Coupon?"
-                                                disabled />
+                                                id="couponCode" disabled />
                                             <button
-                                                class="btn bg-cs-primary text-white font-semibold rounded-md px-6 my-auto" disabled>Apply</button>
+                                                class="btn bg-cs-primary text-white font-semibold rounded-md px-6 my-auto" id="couponEnable" disabled>Apply</button>
                                         </label>
                                     </div>
                                     <!-- Grand Total -->
-                                    <div class="justify-between font-medium hidden">
+                                    <div class="justify-between font-medium flex pt-2">
                                         <p>Grand Total</p>
-                                        <p>BDT <span>0</span></p>
+                                        <p>BDT <span id="grandCost">0</span></p>
                                     </div>
                                 </div>
 
