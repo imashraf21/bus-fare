@@ -1,24 +1,46 @@
-let seatList = [];
+const seatList = [];
 
-let totalSeats = document.getElementById("seatsLeft").innerHTML;
+const totalSeats = document.getElementById("seatsLeft").innerHTML;
 
+// Validate Phone Number & Enable Next Button
+function validateNumber() {
+    const phoneNo = document.getElementById("phone").value;
+    
+    if (phoneNo.length !== 11 || isNaN(phoneNo)) {
+        return false;
+    }
+    return true;
+}
+
+function enableNext() {
+    if (seatList.length >= 1 && validateNumber()) {
+        document.getElementById("nextButton").disabled = false;
+    }
+    else {
+        document.getElementById("nextButton").disabled = true;
+    }
+}
+
+document.getElementById("phone").addEventListener("keyup", enableNext);
+
+// Update Ticket Cost
 function updateBookingInfo(parent, value) {
-    let parentNode = document.getElementById(parent);
+    const parentNode = document.getElementById(parent);
 
-    let childNode = document.createElement('div');
+    const childNode = document.createElement('div');
     childNode.classList.add('flex');
     childNode.classList.add('justify-between');
 
 
-    let p = document.createElement('p');
+    const p = document.createElement('p');
     p.innerText = value;
     childNode.appendChild(p);
 
-    let p1 = document.createElement('p');
+    const p1 = document.createElement('p');
     p1.innerText = "Economy";
     childNode.appendChild(p1);
 
-    let p2 = document.createElement('p');
+    const p2 = document.createElement('p');
     p2.innerText = "550";
     childNode.appendChild(p2);
 
@@ -34,7 +56,7 @@ function enableCoupon() {
 
 function handleClick(button) {
     if (seatList.length < 4) {
-        let innerText = button.innerText;
+        const innerText = button.innerText;
 
         seatList.push(innerText);
 
@@ -61,6 +83,9 @@ function handleClick(button) {
 
         // check coupon 
         enableCoupon();
+
+        // If the user provides phone number first & then selects seat
+        enableNext();
     }
     else {
         alert("You can only buy up to four tickets per purchase.")
