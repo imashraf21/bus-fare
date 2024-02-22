@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -74,7 +74,7 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm text-sm font-medium dropdown-content mt-3 z-[1] p-2 shadow bg-cs-primary-10 rounded-box w-52 text-cs-black-70">
+                        class="menu menu-sm text-sm font-medium dropdown-content mt-3 z-[1] p-2 shadow bg-cs-primary rounded-box w-52 text-white">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Destination</a></li>
@@ -112,29 +112,33 @@
                             class="text-cs-primary">P Paribahan</span></h1>
                     <p class="mb-5 text-sm lg:text-2xl font-normal">Embark on eco-friendly adventures with Green Line -
                         your end-to-end solution for sustainable travel experiences.</p>
-                    <a class="btn btn-primary bg-cs-primary border-none text-base lg:text-xl font-bold font-raleway text-cs-black"
+                    <a class="btn btn-primary bg-cs-primary border-none text-base lg:text-xl font-bold font-raleway text-cs-black scroll-smooth"
                         href="#buy-tickets">Buy
                         Tickets</a>
                 </div>
             </div>
         </section>
         <!-- Badge -->
-        <section class="flex gap-10 justify-center relative -mt-10 font-inter">
-            <div class="flex gap-2 items-center bg-white rounded-xl border-b-2 border-cs-primary px-8 py-4">
+        <section
+            class="container mx-auto px-4 flex flex-col lg:flex-row gap-10 justify-center lg:relative mt-10 lg:-mt-10 font-inter">
+            <div
+                class="flex gap-2 items-center bg-cs-grey lg:bg-white rounded-xl border-b-2 border-cs-primary px-8 py-6 lg:py-4">
                 <img src="./images/people.png" alt="">
                 <div>
                     <h1 class="text-4xl font-bold text-cs-black">500K+</h1>
                     <p class="text-lg font-normal text-cs-black-60">Registered users</p>
                 </div>
             </div>
-            <div class="flex gap-2 items-center bg-white rounded-xl border-b-2 border-cs-primary px-8 py-4">
+            <div
+                class="flex gap-2 items-center bg-cs-grey lg:bg-white rounded-xl border-b-2 border-cs-primary px-8 py-6 lg:py-4">
                 <img src="./images/ticket-cupon.png" alt="">
                 <div>
                     <h1 class="text-4xl font-bold text-cs-black">1.7 lacks</h1>
                     <p class="text-lg font-normal text-cs-black-60">Tickets sold</p>
                 </div>
             </div>
-            <div class="flex gap-2 items-center bg-white rounded-xl border-b-2 border-cs-primary px-8 py-4">
+            <div
+                class="flex gap-2 items-center bg-cs-grey lg:bg-white rounded-xl border-b-2 border-cs-primary px-8 py-6 lg:py-4">
                 <img src="./images/people.png" alt="">
                 <div>
                     <h1 class="text-4xl font-bold text-cs-black">80K+</h1>
@@ -149,7 +153,7 @@
                 <h1 class="text-2xl lg:text-4xl font-bold mb-4 lg:mb-12 lg:text-center">Best offers for you</h1>
             </div>
             <!-- Offer Tickets Container -->
-            <div class="coupon-container flex flex-col lg:flex-row gap-6">
+            <div class="flex flex-col lg:flex-row gap-6">
                 <!-- Yellow Ticket -->
                 <div class="bg-amber-400 h-56 w-full lg:w-1/2 rounded-2xl flex relative">
                     <!-- Left -->
@@ -161,10 +165,6 @@
                         <h3 class="text-sm lg:text-lg font-medium text-cs-black-50">use by January 2024</h3>
                     </div>
                     <!-- divider -->
-                    <!-- <div class="border border-dashed border-b-2 my-5">
-                        <div class="absolute rounded-full w-8 h-8 bg-white -mt-10 left-[55%] lg:left-[57%]"></div>
-                        <div class="absolute rounded-full w-8 h-8 bg-white mt-48 left-[55%] lg:left-[57%]"></div>
-                    </div> -->
                     <div>
                         <img src="./images/cupon-devider.png" alt="" class="h-full">
                     </div>
@@ -209,75 +209,90 @@
                 <div class="container mx-auto px-4 lg:px-20 pb-36">
                     <!-- Heading -->
                     <div class="text-center pt-28">
-                        <h1 class="text-4xl font-bold font-raleway text-cs-black">P.H Paribahan</h1>
-                        <p class="text-lg font-normal text-cs-black-60 py-4">Purchase your tickets seamlessly through
+                        <h1 class="text-2xl lg:text-4xl font-bold font-raleway text-cs-black">P.H Paribahan</h1>
+                        <p class="text-base lg:text-lg font-normal text-cs-black-60 py-4">Purchase your tickets
+                            seamlessly through
                             our versatile management system.</p>
                     </div>
 
                     <!-- Ticket Container -->
-                    <div class="bg-white mt-8 rounded-3xl flex justify-center items-center">
+                    <div class="bg-white mt-8 rounded-3xl flex flex-col lg:flex-row justify-center items-center">
                         <!-- Left -->
-                        <div class="w-3/4 p-8">
+                        <div class="w-full lg:w-3/4 p-4 lg:p-8">
                             <!-- Greenline Heading -->
-                            <div class="flex justify-between">
+                            <div class="flex flex-col lg:flex-row items-center lg:justify-between">
                                 <div class="flex items-center gap-4">
                                     <div>
                                         <img src="./images/bus-logo.png" alt="">
                                     </div>
                                     <div>
-                                        <h1 class="text-[2rem] font-bold text-cs-black font-raleway">Greenline Paribahan
+                                        <h1 class="text-xl lg:text-[2rem] font-bold text-cs-black font-raleway">
+                                            Greenline Paribahan
                                         </h1>
-                                        <p class="text-lg font-normal text-cs-black-60">Coach-009-WEB ! AC_Business</p>
+                                        <p class="text-[0.85rem] lg:text-lg font-normal text-cs-black-60">Coach-009-WEB
+                                            ! AC_Business</p>
                                     </div>
                                 </div>
-                                <div class="flex items-center gap-2 p-4 bg-cs-primary-10 rounded-lg">
+                                <div
+                                    class="flex items-center mx-auto lg:mx-0 w-auto lg:w-auto mt-6 lg:mt-0 gap-2 p-4 bg-cs-primary-10 rounded-lg">
                                     <img src="./images/seat-green.png" alt="">
-                                    <p class="text-lg font-medium text-cs-primary"><span id="seatsLeft">40</span> Seats
+                                    <p class="text-base lg:text-lg font-medium text-cs-primary"><span
+                                            id="seats-left">40</span> Seats
                                         left</p>
                                 </div>
                             </div>
 
                             <!-- Route -->
-                            <div class="bg-cs-grey mt-8 rounded-2xl p-10">
+                            <div class="bg-cs-grey mt-8 rounded-2xl p-6 lg:p-10">
                                 <div
                                     class="flex justify-between border-dashed border-b border-[#03071233] pb-4 font-raleway">
-                                    <p class="text-lg font-semibold text-cs-black-60">Route</p>
-                                    <p class="text-lg font-semibold text-cs-black">Dhaka - Sylhet</p>
+                                    <p class="text-base lg:text-lg font-semibold text-cs-black-60">Route</p>
+                                    <p class="text-base lg:text-lg font-semibold text-cs-black">Dhaka - Sylhet</p>
                                 </div>
                                 <div
                                     class="flex justify-between border-dashed border-b border-[#03071233] py-4 font-raleway">
-                                    <p class="text-lg font-semibold text-cs-black-60">Departure Time</p>
-                                    <p class="text-lg font-semibold text-cs-black">9:00 PM</p>
+                                    <p class="text-base lg:text-lg font-semibold text-cs-black-60">Departure Time</p>
+                                    <p class="text-base lg:text-lg font-semibold text-cs-black">9:00 PM</p>
                                 </div>
-                                <div class="flex justify-between text-base font-medium pt-4">
+                                <div
+                                    class="flex flex-col lg:flex-row justify-between text-[0.80rem] lg:text-base font-medium pt-4 items-center mx-auto">
                                     <div class="p-2 rounded-lg bg-[#0307120d]">
                                         <p>Boarding Point - Laxmipur</p>
                                     </div>
-                                    <div class="p-2 rounded-lg bg-[#0307120d]">
+                                    <div class="p-2  mt-2 lg:mt-0 rounded-lg bg-[#0307120d]">
                                         <p>Dropping Point - Bagura</p>
                                     </div>
-                                    <div class="p-2 rounded-lg bg-[#0307120d]">
+                                    <div class="p-2  mt-2 lg:mt-0 rounded-lg bg-[#0307120d]">
                                         <p>Est. Time - 11 Hour</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Divider -->
-                        <img src="./images/info-devider.png" alt="">
+                        <img src="./images/info-devider.png" alt="" class="hidden lg:flex">
+                        <div class="border-b-2 border-dashed border-cs-primary mt-4 mb-8 w-[80%] lg:hidden">
+                            <div class="absolute rounded-full w-10 h-10 bg-cs-grey -mt-5 -left-0"></div>
+                            <div class="absolute rounded-full w-10 h-10 bg-cs-grey -mt-5 -right-0"></div>
+                        </div>
                         <!-- Right -->
-                        <div class="w-1/4 flex flex-col items-center font-raleway">
+                        <div
+                            class="w-full lg:w-1/4 pb-10 lg:pb-0 flex flex-row lg:flex-col items-center justify-center gap-6 lg:gap-0 font-raleway">
                             <img src="./images/fare.png" alt="">
-                            <h1 class="text-3xl font-bold text-cs-black">550 Taka</h1>
-                            <h1 class="text-2xl font-semibold text-cs-black-60">Per Seat</h1>
+                            <div class="text-center">
+                                <h1 class="text-2xl lg:text-3xl font-bold text-cs-black">550 Taka</h1>
+                                <h1 class="text-xl lg:text-2xl font-semibold text-cs-black-60">Per Seat</h1>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Seat Selection Container -->
-                    <div class="bg-white mt-8 rounded-3xl p-8">
-                        <div class="flex">
+                    <div class="bg-white mt-8 rounded-3xl p-4 lg:p-8">
+                        <div class="flex flex-col lg:flex-row">
                             <!-- Left -->
-                            <div class="flex-grow border-dashed border-r border-[#03071266] text-cs-black-50 pr-10">
-                                <h1 class="text-2xl font-semibold font-raleway text-cs-black">Select Your Seat</h1>
+                            <div
+                                class="w-full lg:w-3/5 border-dashed border-b-2 lg:border-b-0 lg:border-r border-[#03071266] text-cs-black-50 pb-8 lg:pb-0 lg:pr-10">
+                                <h1 class="text-xl lg:text-2xl font-semibold font-raleway text-cs-black">Select Your
+                                    Seat</h1>
 
                                 <div
                                     class="flex justify-between border-dashed border-y border-[#03071233] text-lg font-medium py-2 my-2">
@@ -293,174 +308,174 @@
 
                                 <!-- Bus Skeleton -->
                                 <div class="flex justify-end">
-                                    <img class="bg-cs-black-10 px-8 py-3 w-24 rounded-lg" src="./images/wheel.png"
-                                        alt="">
+                                    <img class="bg-cs-black-10 px-4 lg:px-9 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
+                                        src="./images/wheel.png" alt="">
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">A</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg seat"
                                             onclick="handleClick(this)">A1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg seat"
                                             onclick="handleClick(this)">A2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg seat"
                                             onclick="handleClick(this)">A3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg seat"
                                             onclick="handleClick(this)">A4</button>
                                     </div>
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">B</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">B1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">B2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">B3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">B4</button>
                                     </div>
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">C</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">C1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">C2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">C3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">C4</button>
                                     </div>
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">D</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">D1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">D2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">D3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">D4</button>
                                     </div>
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">E</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">E1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">E2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">E3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">E4</button>
                                     </div>
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">F</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">F1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">F2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">F3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">F4</button>
                                     </div>
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">G</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">G1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">G2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">G3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">G4</button>
                                     </div>
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">H</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">H1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">H2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">H3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">H4</button>
                                     </div>
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">I</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">I1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">I2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">I3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">I4</button>
                                     </div>
                                 </div>
 
-                                <div class="flex justify-between mt-3 text-lg font-medium">
+                                <div class="flex justify-between mt-3 text-sm lg:text-lg font-medium">
                                     <div class="flex gap-5 items-center">
                                         <p class="w-4">J</p>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">J1</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">J2</button>
                                     </div>
                                     <div class="flex gap-5 items-center">
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">J3</button>
-                                        <button class="bg-cs-grey px-8 py-3 w-24 rounded-lg seat"
+                                        <button class="bg-cs-grey px-2 lg:px-8 py-2 lg:py-3 w-12 lg:w-24 rounded-lg"
                                             onclick="handleClick(this)">J4</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- Right -->
-                            <div class="flex-grow pl-10 text-base">
+                            <div class="w-full lg:w-2/5 lg:pl-10 text-base mt-4 lg:mt-0">
                                 <h1
-                                    class="text-2xl font-semibold border-dashed border-b border-[#03071233] font-raleway text-cs-black pb-2">
+                                    class="text-xl lg:text-2xl font-semibold border-dashed border-b border-[#03071233] font-raleway text-cs-black pb-2">
                                     Select Your Seat</h1>
 
                                 <!-- Cost -->
@@ -470,38 +485,40 @@
                                         class="flex justify-between border-dashed border-b border-[#03071233] text-cs-black pb-2 font-medium">
                                         <p>Seat<sup><span
                                                     class="bg-cs-primary text-white text-[0.75rem] font-bold rounded-lg px-2"
-                                                    id="seatsBooked">0</span></sup></p>
+                                                    id="seats-booked">0</span></sup></p>
                                         <p>Class</p>
                                         <p>Price</p>
                                     </div>
                                     <!-- Handled by JS -->
-                                    <div id="bookingList" class="font-normal text-cs-black-60">
+                                    <div id="booking-list" class="font-normal text-cs-black-60">
 
                                     </div>
                                     <!-- Total Cost -->
                                     <div class="flex justify-between pt-2 text-cs-black font-medium">
                                         <p>Total Price</p>
-                                        <p>BDT <span id="totalCost">0</span></p>
+                                        <p>BDT <span id="total-cost">0</span></p>
                                     </div>
                                     <!-- Discounted -->
                                     <div id="discount" class="justify-between font-medium hidden">
                                         <p>Discount Price</p>
-                                        <p>BDT <span id="discountedPrice">0</span></p>
+                                        <p>BDT <span id="discounted-price">0</span></p>
                                     </div>
                                     <!-- Coupon -->
-                                    <div id="couponContainer" class="pt-2">
-                                        <label id="coupon" class="input border-none flex justify-between h-14">
-                                            <input class="bg-white" type="text" placeholder="Have Any Coupon?"
-                                                id="couponCode" disabled />
-                                            <button
-                                                class="btn bg-cs-primary text-white font-semibold rounded-md px-6 my-auto"
-                                                id="couponEnable" disabled onclick="handleCoupon()">Apply</button>
+                                    <div id="coupon-container" class="mt-2 tooltip tooltip-bottom"
+                                        data-tip="Buy 4 tickets to apply coupon!">
+                                        <label id="coupon"
+                                            class="input border-none flex justify-between lg:h-14 cursor-not-allowed">
+                                            <input id="coupon-code" class="bg-white w-full" type="text"
+                                                placeholder="Have Any Coupon?" disabled />
+                                            <button id="coupon-enable"
+                                                class="btn btn-sm lg:btn-md bg-cs-primary text-white font-semibold rounded-md lg:px-6 my-auto"
+                                                disabled onclick="handleCoupon()">Apply</button>
                                         </label>
                                     </div>
                                     <!-- Grand Total -->
                                     <div class="justify-between font-medium flex pt-2">
                                         <p>Grand Total</p>
-                                        <p>BDT <span id="grandCost">0</span></p>
+                                        <p>BDT <span id="grand-cost">0</span></p>
                                     </div>
                                 </div>
 
@@ -519,11 +536,16 @@
                                     <input type="text" id="email" placeholder="Enter your email id"
                                         class="input input-bordered text-cs-black-40 font-normal">
 
-                                    <button type="button" class="btn bg-cs-primary text-white text-xl font-extrabold font-raleway"
-                                        id="nextButton" disabled onclick="my_modal_1.showModal()">Next</button>
+                                    <div id="modal-show-button" class="tooltip cursor-not-allowed"
+                                        data-tip="Select a seat and Provide a 11-digit phone number!">
+                                        <button type="button"
+                                            class="btn bg-cs-primary w-full text-white text-xl font-extrabold font-raleway"
+                                            id="next-button" disabled onclick="my_modal_1.showModal()">Next</button>
+                                    </div>
                                 </form>
 
-                                <div class="flex justify-around mt-4 font-normal text-cs-black-60">
+                                <div
+                                    class="flex flex-col lg:flex-row gap-2 lg:gap-0 justify-around mt-4 font-normal text-cs-black-60">
                                     <a href="" class="underline">Terms and Conditions</a>
                                     <a href="" class="underline">Cancellation Policy</a>
                                 </div>
@@ -531,7 +553,7 @@
                                 <!-- Success Modal -->
                                 <dialog id="my_modal_1" class="modal">
                                     <div
-                                        class="modal-box max-w-3xl flex flex-col justify-center items-center text-center p-20 font-roboto">
+                                        class="modal-box max-w-3xl flex flex-col justify-center items-center text-center p-10 lg:p-20 font-roboto">
                                         <img src="./images/success.png" alt="">
                                         <h3 class="font-bold text-2xl text-[#27AE60] py-6">SUCCESS</h3>
                                         <p class="py-4 text-xl font-medium">Thank you for Booking Our Bus Seats. <br>
@@ -541,7 +563,8 @@
                                         <div class="modal-action">
                                             <form method="dialog">
                                                 <button type="button"
-                                                    class="btn bg-[#27AE60] w-64 rounded-full text-xl font-semibold text-white" onclick="window.open('index.html', '_self')">Continue</button>
+                                                    class="btn bg-[#27AE60] w-64 rounded-full text-xl font-semibold text-white"
+                                                    onclick="window.open('index.html', '_self')">Continue</button>
                                             </form>
                                         </div>
                                     </div>
@@ -556,13 +579,12 @@
     <!-- Footer -->
     <footer class="bg-cs-black text-neutral-content font-inter">
         <!-- Upper Part -->
-        <div class="footer container mx-auto grid-rows-1 justify-between px-10 pt-28">
+        <div class="footer container mx-auto grid-rows-1 justify-between px-4 lg:px-10 pt-28">
             <!-- Upper Left -->
-            <div>
+            <div class="lg:w-2/3">
                 <h1 class="text-4xl font-extrabold font-raleway">P-Ticket</h1>
-                <p class="text-lg font-normal text-[#FFFFFFCC] pt-4">P-Ticket is a digital platform to make your
-                    <br>
-                    daily commuting better.
+                <p class="text-lg font-normal text-[#FFFFFFCC] pt-4">P-Ticket is a digital platform to make your daily
+                    commuting better.
                 </p>
             </div>
             <!-- Upper Right -->
@@ -582,12 +604,13 @@
         </div>
 
         <!-- Lower Part -->
-        <div class="footer container mx-auto mt-16">
+        <div class="footer container mx-auto mt-16 px-4 lg:px-10">
             <!-- Divider -->
-            <div class="border-dashed border-t border-[#FFFFFF66] px-10 pt-8 pb-20 lg:flex justify-between w-full">
+            <div
+                class="border-dashed border-t border-[#FFFFFF66] pt-8 pb-20 flex flex-col-reverse lg:flex-row justify-between gap-6 lg:gap-0 w-full">
                 <div class="text-base font-normal text-[#FFFFFFB3]">@all rights reserved, P-Ticket services limited.2024
                 </div>
-                <div class="flex gap-6 text-base font-medium text-white">
+                <div class="flex flex-col lg:flex-row gap-2 lg:gap-6 text-base font-medium text-white">
                     <a href="">Terms & condition</a>
                     <a href="">Return & refund policy</a>
                     <a href="">Privacy policy</a>
@@ -596,6 +619,7 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="event.js"></script>
 </body>
 
 </html>
